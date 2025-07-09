@@ -1,14 +1,7 @@
 # POS-Specific Dictionary Entry Generation Rules
 
 ## 1. Core Principles (All POS)
-
-### Basic Requirements
-- Use only the 10,000 most common English words in definitions
-- Maximum 25 words per definition
-- Each definition must be self-contained and clear
-- Avoid circular definitions (never use the word itself)
-- Merge related meanings aggressively (definitions must be 40%+ different)
-
+- Every word used should serve its function, avoid redundant
 ### Number of Definitions (1-2-3-5 Rule)
 - **1 definition**: Default for most words (captures 80%+ of usage)
 - **2 definitions**: When there are clearly distinct meanings
@@ -17,124 +10,56 @@
 
 ## 2. Universal Rules for All POS
 
+### Meanings Rules
+- Clarity without complexity: Uses simple, common words (within the 10,000 most frequent) to explain meaning, avoiding circular definitions or jargon that sends users searching for more definitions
+- Maximum 25 words per definition
+- Emotional resonance: Captures not just literal meaning but the word's "feel" and emotional weight that native speakers intuitively understand.
+- Concise completeness: Delivers all essential information in under 25 words for the core definition, respecting users' time and cognitive load while ensuring nothing crucial is missed.
+- Merge related meanings (definitions must be 40%+ different)
+
 ### Hypernym Rules
-- This should be used to direct the user cognitive to the direction of the word's meaning 
-- Keep tags to 1-2 words maximum
-- Choose the most immediate and helpful parent category
-- Must be simpler/more common than the word being defined
-- For abstract concepts, use the closest concrete hypernym
+- Cognitively natural: Matches how people actually categorize things in daily life, not scientific taxonomies (e.g., "bird" for penguin, not "flightless aquatic bird")
+- Optimally specific: Finds the sweet spot between too broad ("thing") and too narrow ("deciduous flowering tree") - usually one or two levels up from the word itself
+- Contextually relevant - Chooses the hypernym that fits the word's most common usage (e.g., "tool" for hammer when used practically, "weapon" when used violently)
+- Instantly orienting: Acts like a GPS coordinate that immediately tells users where this word "lives" in their mental map of language
+- Emotionally neutral - Avoids loaded terms that might color understanding
 - Skip if no clear hypernym exists (e.g., function words, interjections)
-- Common hierarchies:
-  - Objects: thing > object > tool > specific tool
-  - Actions: do > move/make/change > specific action
-  - Qualities: quality > physical/mental > specific quality
 
 ### Synonym Rules
-- Include 4-6 synonyms per meaning when available
-- Order by frequency of use (most common first)
-- Only include if truly interchangeable in most contexts
-- Must be from the 10,000 most common words
-- Can include common two-word phrases
-- Match register and formality level
+- Contextually matched: Shows synonyms that actually work in the user's likely context (e.g., for "happy": "glad" for everyday use, "elated" for intense joy, "content" for quiet satisfaction).
+- Emotional precision: Captures subtle feeling differences (e.g., "slim" vs "skinny" vs "slender" - same concept, different emotional colors).
+- Usage frequency ordered - Lists common alternatives first ("big" → "large") before less common ones ("enormous"), respecting users' time.
+- Max 5 synonyms, if there are not enough relevant synonyms then less is also fine
 
 ### Example Sentence Rules
-- Provide 3-4 examples per meaning
-- Show varied contexts: personal, professional, emotional
-- Include different grammatical patterns
-- Length can vary naturally (8-20 words)
-- Use present tense unless past is more natural
-- Include idiomatic uses and collocations
-- Number examples (1., 2., 3.) for clarity
-
-### Etymology Section Rules
-- Required for all content words (optional for function words)
-- Structure chronologically from oldest to newest
-- Include:
-  - Original language and root meaning
-  - Major semantic shifts with approximate dates
-  - Cultural/historical context for changes
-  - Connection to modern meaning
-- Use bullet points with dates/periods bolded
-- Explain WHY meanings changed, not just how
-- Keep scholarly but accessible
-
----
+- Instantly relatable: Uses everyday scenarios users recognize ("She hesitated before knocking on her boss's door") rather than abstract situations
+- Naturally contextual: Shows the word in its most common environment, helping users predict when they'll encounter or need it
+- Multiple angles: Provides 2-3 examples showing different uses/contexts (e.g., "break" as physical action, emotional state, and time pause)
+- Length-appropriate: Keeps examples concise but complete enough to show meaning clearly
+- Culturally neutral: Avoids references that date quickly or exclude users (no celebrity names, brand products, or local events)
 
 ## 3. Output Format
-
-```
-[WORD] ([POS]) (pl. [plural form if irregular])
-
-Meanings:
-
-1. [Context tag if needed] [Primary definition - covers 60-80% of uses]
-[Expanded description with specific details, typical usage contexts, and distinguishing features]
-
-e.g. 1. [Example showing typical use]
-2. [Example showing different context]
-3. [Example showing collocation or idiomatic use]
-4. [Example showing register variation if applicable]
-
-Synonyms: [4-6 synonyms ordered by frequency]
-
-2. [Context tag] [Secondary definition - next 15-20% of uses]
-[Clear description distinguishing from primary meaning]
-
-e.g. 1. [Example clearly showing this meaning]
-2. [Example in professional/formal context]
-3. [Example in casual/emotional context]
-
-Synonyms: [4-6 synonyms specific to this meaning]
-
-[Additional meanings only if essential]
-
-Origin & Evolution:
-[Brief introductory statement about the word's journey]
-
-• [Ancient root language] *[root word]* ("[meaning]")
-[Explanation of original concept and cultural context]
-
-• [Time period]: [Development stage]
-[How and why the meaning evolved, with historical context]
-
-• [Time period]: [Next major shift]
-[Cultural or technological changes that drove new meanings]
-
-• Today: [Current status]
-[How historical meanings influence modern usage]
-
-[Concluding insight about the word's semantic development]
-```
-
----
-
+- JSON format, construct in a suitable way for database entry to eventually being called by API
+- 
 ## 4. POS-Specific Guidelines
 
 ### NOUN
-**Definition Structure**: 
-- Concrete: "[Category] that/which [specific features and typical use]"
-- Abstract: "The [state/quality/act/concept] of [description with context]"
-
-**Special Considerations**:
-- Include typical purpose, location, or users
-- For countable/uncountable, note as (UC) or show plural
-- Describe physical and functional characteristics
-- Connect to broader systems or contexts
-
-**Definition Distribution**:
-- 1 definition: 80% (concrete objects, specific concepts)
-- 2 definitions: 15% (concrete + abstract, or technical + common)
-- 3 definitions: 5% (only high-frequency nouns)
+- Core definition first: Opens with the primary, most common meaning in simple terms
+- For countable/uncountable, note C or UC or both for each case. For the cases that are important (for example "freedom" when is countable then have a meaning that in distinct section) give extra a *special* feature
+- Visual or sensory anchoring: For concrete nouns, evokes what users can see/touch/experience; for abstract nouns, connects to familiar feelings or concepts.
+- Delivery inflection forms
+- Related forms: Shows connected words briefly (decide→decision→decisive) helping users expand vocabulary naturally.
+- Context domains: Indicates where this noun lives (formal/informal, technical/everyday, regional variations) without overwhelming.
 
 ### VERB
-**Definition Structure**: "To [base action] [object/manner/purpose details]"
-
-**Special Considerations**:
-- Include typical subjects and objects
-- Note transitivity through examples, not labels
-- Show aspectual differences (states vs. actions)
-- Include common particles and prepositions
-- Describe manner, instrument, or result when relevant
+- Action clarity: Opens with what someone/something DOES, using simple, vivid language
+- Pattern prominence: Immediately shows verb patterns (hesitate + to do, insist + on doing, give + someone + something) through natural examples
+- Deliver inflected forms
+- Transitivity clarity: Shows whether it needs an object or not through clear examples, not grammar term
+- Common combinations: Highlights frequent noun partners and prepositions
+- Formality signals: Indicates register naturally helping users match context
+- Phrasal verb links: For base verbs, shows related phrasal meanings as users often need these
+- Subject preferences: Subtly shows who/what typically does this action (birds chirp, engines purr) through examples
 
 **Definition Distribution**:
 - 1 definition: 70% (specific actions)

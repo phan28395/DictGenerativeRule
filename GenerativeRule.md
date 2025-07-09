@@ -19,9 +19,7 @@ This guide details the exact data needed for each word type across three glance 
 ### Second Glance Data
 - **Expanded definition** (20-25 words maximum) - Claude
 - **Top 3-5 collocations** (adjective + noun, noun + verb patterns) - Claude
-- **Domain tags** if multiple contexts (medical, legal, general)
-- **Common phrases** (2-3 maximum)
-- **Example** claude
+- **Example** - Claude
 ### Third Glance Data
 - **Semantic field connections** (hypernyms, related concepts)
 - **Register variations** (formal/informal/slang)
