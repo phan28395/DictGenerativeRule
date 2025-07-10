@@ -39,8 +39,9 @@
 - Culturally neutral: Avoids references that date quickly or exclude users (no celebrity names, brand products, or local events)
 
 ## 3. Output Format
-- JSON format, construct in a suitable way for database entry to eventually being called by API
-- 
+- JSON format, construct in a suitable way for database entry to eventually being called by API by website or App in desktop, mobile.
+- Each word in definition should be clickable, construct in away that allow to build that structure later.
+- Some words in definition will have special effect (grey box, italic, etc...) if meaningful to do so.
 ## 4. POS-Specific Guidelines
 
 ### NOUN
@@ -67,13 +68,13 @@
 - 3-5 definitions: 10% (only top 500 most common verbs)
 
 ### ADJECTIVE
-**Definition Structure**: "[Quality description] [typical applications or comparisons]"
-
-**Special Considerations**:
-- Describe gradability through examples
-- Include both physical and evaluative uses
-- Show collocation patterns
-- Note register differences in examples
+- Sensory/emotional immediacy: Opens with what human feel, see, or experience
+- Common noun partners: Highlights frequent pairings (bitter + coffee/disappointment/cold) showing which things this adjective naturally describes
+- Position patterns: Subtly demonstrates whether it goes before nouns only, after linking verbs, or both
+- Gradability signals: Shows if it can be compared or is absolute through natural usage
+- Connotation clarity: Makes positive/negative/neutral feelings obvious preventing social errors
+- Register matching - Indicates formality naturally through examples 
+- Metaphorical extensions: Shows how physical adjectives work abstractly when common
 
 **Definition Distribution**:
 - 1 definition: 85%
@@ -82,93 +83,89 @@
 
 ### ADVERB
 **Definition Structure**: 
-- Manner: "In a [adjective] way/manner [additional context]"
-- Degree: "To a [adjective] degree/extent"
-- Sentence: "Used to [function in sentence]"
+- Function-first clarity: Opens by showing what the adverb does
+- Position patterns: Shows where it naturally sits in sentences through examples, not rules
+- Verb partnership: Highlights which verbs it commonly modifies  helping users sound natural
+- Adjective connections: When derived from adjectives, links to the base word but shows meaning shifts (happy→happily is straightforward, but hard→hardly changes completely)
+- Sentence rhythm: Demonstrates through examples how the adverb affects sentence flow and emphasis 
+- Register awareness: Shows formality levels naturally through contextual examples
+- Meaning groups: For multi-use adverbs, clearly separates functions
 
-**Special Considerations**:
-- Show position flexibility through examples
-- Include discourse functions
-- Note formality levels
+The best adverb entries make users think "Now I know exactly how to add this layer of meaning", providing confidence for precise modification.
 
 **Definition Distribution**:
 - 1 definition: 90%
 - 2 definitions: 10% (manner + degree, or position + time)
 
 ### PREPOSITION
-**Definition Structure**: "[Spatial/temporal/logical relationship] between [elements]"
+- Visual/spatial grounding - For physical prepositions, creates instant mental pictures.
+- Movement vs. location - Clearly distinguishes static position (at/in/on) from movement (to/into/onto) through vivid examples.
+- Time mapping - Shows temporal uses with concrete scenarios making patterns feel natural, not rule-based.
+Meaning clusters - Groups related uses clearly (at: location "at home" / time "at noon" / state "at war") without overwhelming.
 
-**Special Considerations**:
-- Provide clear spatial imagery
-- Separate spatial, temporal, and abstract uses
-- Include metaphorical extensions
-- Show phrasal verb integration
 
 **Definition Distribution**:
 - 1-2 definitions: 60% (basic spatial or temporal)
 - 3 definitions: 30% (spatial + temporal + abstract)
 - 4-5 definitions: 10% (only most common: in, on, at, for)
 
-### Other POS (PRONOUN, CONJUNCTION, INTERJECTION)
-[Previous rules remain the same]
+### PRONOUN
 
----
+- Reference clarity - Shows exactly what/who the pronoun replaces through clear example pairs ("Kim arrived late. She apologized." - she = Kim).
 
-## 5. Additional Requirements
+- Usage distinctions - Clarifies different functions of the same form (their = possessive, they're = they are, there = location) without grammar terms.
 
-### Meaning Descriptions
-- First sentence: concise definition (under 25 words)
-- Second sentence: expanded description with:
-  - Typical contexts of use
-  - Distinguished features
-  - Common associations
-  - Register or formality notes
+- Context confidence - Demonstrates when each pronoun fits naturally (who for people, which for things, that for both) through memorable examples.
 
-### Cultural and Usage Notes
-- Include usage notes only when critical for avoiding errors
-- Note regional variations if significant
-- Indicate formal/informal register through examples
-- Show pragmatic functions through natural contexts
+- Evolution awareness - Addresses modern usage changes (singular they, reflexive pronouns) matter-of-factly, helping users navigate current language.
 
-### Etymology Presentation
-- Make connections between historical and current meanings explicit
-- Include interesting cultural details that aid retention
-- Use dates/periods to show language change as gradual process
-- Avoid technical linguistic terminology
+- Formality spectrum - Shows register differences naturally (one=formal, you=general, folks=casual) for appropriate choices.
 
----
+- Common errors - Prevents mistakes through contrasting examples ("between you and me" ✓ not "between you and I" ✗) without lecturing.
 
-## 6. Generation Checklist
+- Visual formatting - Uses clear layout to separate different uses (numbered meanings, bullet points for phrases) for quick scanning.
 
-Before finalizing any entry:
-- [ ] Core definition under 25 words?
-- [ ] All definition words in top 10,000 vocabulary?
-- [ ] Context tags clear and helpful?
-- [ ] 3-4 examples showing varied usage?
-- [ ] 4-6 synonyms appropriately ordered?
-- [ ] Etymology tells coherent story of meaning development?
-- [ ] Different meanings sufficiently distinct (40%+ different)?
-- [ ] Examples demonstrate grammar, register, and collocations?
-- [ ] Cultural and pragmatic aspects shown through examples?
+- Minimal grammar - Explains function through examples and patterns, not terminology - users learn by seeing, not studying rules.
 
----
+- The best pronoun entries feel like a helpful friend clarifying "here's when you use this one" - solving practical confusion rather than teaching grammar lessons.
+### CONJUNCTION
+
+- Relationship clarity - Shows exactly what logical connection it creates (but = contrast, because = reason, although = concession) through instant examples.
+
+- Position patterns - Demonstrates where it naturally sits ("However" starts sentences, "but" joins within, "although" begins clauses) without rules.
+
+- Punctuation guidance - Shows comma usage through examples naturally ("I tried, but failed" vs "and succeeded") helping users write correctly.
+
+- Strength differences - Clarifies subtle distinctions (but = simple contrast, yet = stronger/surprising contrast, however = formal contrast).
+
+- Common pairings - Highlights natural partners (either...or, not only...but also, both...and) showing complete patterns.
+
+- Register awareness - Indicates formality through context (and=neutral, furthermore=formal, plus=casual) for appropriate choices.
+
+- Meaning precision - Separates different uses clearly ("since" = time vs reason, "as" = time vs reason vs comparison).
+
+- Flow demonstration - Shows how each conjunction affects sentence rhythm and reader expectations through varied examples.
+
+The best conjunction entries make users think "Now I know exactly how to link these thoughts" - providing confidence for smooth, logical writing rather than choppy fragments.
+
+### INTERJECTION
+Skip interjection, does not meaningful to define
+
+
+
+
 
 ## 7. Quality Standards
 
 ### Comprehensiveness
 - Cover all major meanings in current use
-- Include both formal and informal registers
-- Show full range of grammatical patterns
-- Represent different varieties of English where relevant
 
 ### Clarity
 - Each definition standalone and clear
 - Examples illuminate rather than confuse
-- Etymology enhances understanding
 - Synonyms genuinely substitutable
 
 ### Pedagogical Value
-- Learner can understand when and how to use the word
+- Learner can understand when and how to use the word, logically and intuitively
 - Examples provide models for production
-- Etymology aids memory and deeper understanding
 - Overall entry builds comprehensive word knowledge
