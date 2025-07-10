@@ -1,92 +1,72 @@
-# NOUN Dictionary Entry Generation Instructions
+# NOUN Dictionary Entry Generation Rules
 
-## Overview
-Create dictionary entries for NOUN words following these specific guidelines while adhering to the core principles from GenerativeRule2.md.
-
-## NOUN-Specific Requirements
-
-### 1. Definition Structure
+## Core Definition Structure
 - **Core definition first**: Opens with the primary, most common meaning in simple terms
-- **Maximum 25 words** per definition
-- Use simple, common words (within the 10,000 most frequent)
-- Avoid circular definitions or jargon
+- **Maximum 25 words per definition** using only the 10,000 most frequent words, also try to have minimum 15 words
+- **Emotional resonance**: Captures not just literal meaning but the word's "feel" and emotional weight that native speakers intuitively understand
 
-### 2. Countability Notation
-- Mark each definition with **C** (countable), **UC** (uncountable), or **C/UC** (both)
-- For words that change meaning based on countability (e.g., "freedom"):
-  - Add a **special** feature to highlight this distinction
-  - Provide separate definitions for countable vs uncountable uses
-
-### 3. Visual/Sensory Anchoring
-- **Concrete nouns**: Evoke what users can see/touch/experience
-- **Abstract nouns**: Connect to familiar feelings or concepts
-- Make the word "come alive" through sensory or emotional connections
-
-### 4. Inflected Forms
-- Provide plural forms (regular and irregular)
-- Note any spelling changes (e.g., baby → babies)
-- Include pronunciation changes if relevant
-
-### 5. Related Forms
-- Show connected words briefly (e.g., decide → decision → decisive)
-- Helps users expand vocabulary naturally
-- Include only the most common/useful related forms
-
-### 6. Context Domains
-- Indicate where this noun typically appears:
-  - Formal/informal contexts
-  - Technical/everyday usage
-  - Regional variations
-- Keep this information concise and practical
-
-## Definition Distribution Guidelines
+## Definition Distribution
 - **1 definition**: Default for most nouns (captures 80%+ of usage)
 - **2 definitions**: When there are clearly distinct meanings
-- **3 definitions**: Only for high-frequency words with separate uses
-- **4-5 definitions**: Reserved for the most common words (top 500)
+- **3 definitions**: Only for high-frequency nouns with separate uses
+- **4-5 definitions**: Reserved for the most common nouns (top 500)
+- **Merge related meanings** (definitions must be 40%+ different)
 
-## JSON Output Format
-```json
-{
-  "word": "example",
-  "pos": "NOUN",
-  "definitions": [
-    {
-      "id": 1,
-      "meaning": "Clear, simple definition under 25 words",
-      "countability": "C/UC/C-UC",
-      "special": "Optional: for important countability distinctions"
-    }
-  ],
-  "inflected_forms": {
-    "plural": "examples"
-  },
-  "hypernym": "instance",
-  "synonyms": ["instance", "case", "illustration", "sample", "specimen"],
-  "related_forms": {
-    "verb": "exemplify",
-    "adjective": "exemplary"
-  },
-  "examples": [
-    "She gave several examples to illustrate her point.",
-    "This painting is a fine example of Renaissance art.",
-    "Follow the example in the textbook."
-  ],
-  "context_domains": {
-    "register": "neutral",
-    "usage": "everyday/academic"
-  }
-}
-```
+## Elements PER MEANING (for each definition)
 
-## Quality Checklist
-- [ ] Definition is under 25 words and uses simple language
-- [ ] Countability is clearly marked for each definition
-- [ ] Hypernym is cognitively natural and optimally specific
-- [ ] Synonyms are contextually matched (max 5)
-- [ ] Examples are instantly relatable and show different contexts (2-3)
-- [ ] Inflected forms are provided
-- [ ] Related forms help vocabulary expansion
-- [ ] Context domains guide appropriate usage
-- [ ] All word components are designed to be clickable in final implementation
-- [ ] Special formatting (grey box, italic) is noted where meaningful
+### 1. Countability Notation
+- Mark each definition with **C** (countable), **UC** (uncountable), or **both**
+- For important distinctions (e.g., "freedom" when countable has distinct meaning), add a ***special*** feature to highlight the significance
+
+### 2. Semantic Category/Domain (Instead of Hypernym)
+Choose the most helpful categorization approach:
+- **Functional category**: What it does/is used for (e.g., "hammer" → tool for building)
+- **Conceptual domain**: Where it belongs conceptually (e.g., "democracy" → system of government)
+- **Experiential category**: How we experience it (e.g., "joy" → positive emotion)
+- **Relational category**: What it relates to (e.g., "cousin" → family member)
+- **Skip if forced**: Only include when it genuinely helps understanding
+
+### 3. Context-Specific Synonyms
+- 2-3 synonyms that work for THIS specific meaning
+- Ordered by usage frequency
+- Show contextually matched alternatives
+- Capture subtle emotional differences
+
+### 4. Example Sentences
+- 1-2 examples per meaning showing this specific use
+- Use instantly relatable, everyday scenarios
+- Keep culturally neutral and timeless
+- Show the word in its natural context for this meaning
+
+### 5. Usage Domain Indicator
+- Indicate where this specific meaning lives (formal/informal, technical/everyday, regional)
+- Note if this meaning is field-specific (medical, legal, etc.)
+
+## Elements for ENTIRE WORD (not per meaning)
+
+### 1. Inflection Forms
+- Provide all inflected forms (plural, possessive, etc.)
+- Show irregular forms clearly
+- Place at word level, not repeated per meaning
+
+### 2. Related Forms
+- Show connected words briefly (decide→decision→decisive)
+- Help users expand vocabulary naturally
+- Include word family connections
+
+### 3. Visual and Sensory Anchoring
+- **Concrete nouns**: Evoke what users can see/touch/experience
+- **Abstract nouns**: Connect to familiar feelings or concepts
+- Create instant mental associations across all meanings
+
+## Output Requirements
+- JSON format suitable for database entry
+- Structure to allow each word in definition to be clickable
+- Support for special formatting (grey box, italic) where meaningful
+- Clear separation between per-meaning elements and whole-word elements
+
+## Quality Standards
+- Every word should serve its function, avoid redundancy
+- Clarity without complexity - no circular definitions or jargon
+- Concise completeness - all essential information in minimal space
+- Help users understand both when and how to use the word, logically and intuitively
