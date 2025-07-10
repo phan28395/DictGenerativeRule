@@ -1,72 +1,150 @@
 # NOUN Dictionary Entry Generation Rules
 
-## Core Definition Structure
-- **Core definition first**: Opens with the primary, most common meaning in simple terms
-- **Maximum 25 words per definition** using only the 10,000 most frequent words, also try to have minimum 15 words
-- **Emotional resonance**: Captures not just literal meaning but the word's "feel" and emotional weight that native speakers intuitively understand
+## 1. REQUIRED FEATURES TO DELIVER
 
-## Definition Distribution
-- **1 definition**: Default for most nouns (captures 80%+ of usage)
-- **2 definitions**: When there are clearly distinct meanings
-- **3 definitions**: Only for high-frequency nouns with separate uses
-- **4-5 definitions**: Reserved for the most common nouns (top 500)
-- **Merge related meanings** (definitions must be 40%+ different)
+### A. PER-MEANING FEATURES (repeat for each definition)
+1. **Definition**
+   - Primary meaning in simple terms
+   - Maximum 25 words using only top 10,000 most frequent words
+   - No circular definitions or complex jargon
 
-## Elements PER MEANING (for each definition)
+2. **Countability Marker**
+   - Values: `C` (countable), `UC` (uncountable), or `C/UC` (both)
+   - Add `*special*` flag (special = true) when countability changes meaning significantly
 
-### 1. Countability Notation
-- Mark each definition with **C** (countable), **UC** (uncountable), or **both**
-- For important distinctions (e.g., "freedom" when countable has distinct meaning), add a ***special*** feature to highlight the significance
+3. **Semantic Category**
+   - Choose ONE approach that best helps understanding:
+     - `functional`: what it does/is used for
+     - `conceptual`: intellectual/abstract domain
+     - `experiential`: how we experience/feel it
+     - `relational`: what it relates to
+   - Can be `null` if no category adds value
+   - Limit at 2 words
 
-### 2. Semantic Category/Domain (Instead of Hypernym)
-Choose the most helpful categorization approach:
-- **Functional category**: What it does/is used for (e.g., "hammer" → tool for building)
-- **Conceptual domain**: Where it belongs conceptually (e.g., "democracy" → system of government)
-- **Experiential category**: How we experience it (e.g., "joy" → positive emotion)
-- **Relational category**: What it relates to (e.g., "cousin" → family member)
-- **Skip if forced**: Only include when it genuinely helps understanding
+4. **Synonyms**
+   - Array of 2-5 contextually appropriate synonyms
+   - Ordered by frequency (most common first)
+   - Must work in THIS specific meaning's context
 
-### 3. Context-Specific Synonyms
-- 2-3 synonyms that work for THIS specific meaning
-- Ordered by usage frequency
-- Show contextually matched alternatives
-- Capture subtle emotional differences
+5. **Examples**
+   - Array of 2 example sentences
+   - Show this specific meaning in natural use
+   - Everyday scenarios, culturally neutral
 
-### 4. Example Sentences
-- 1-2 examples per meaning showing this specific use
-- Use instantly relatable, everyday scenarios
-- Keep culturally neutral and timeless
-- Show the word in its natural context for this meaning
+6. **Register**
+   - Values: `formal`, `informal`, `neutral`, `technical`, `literary`
+   - Can include field if specialized: `medical`, `legal`, `academic`
 
-### 5. Usage Domain Indicator
-- Indicate where this specific meaning lives (formal/informal, technical/everyday, regional)
-- Note if this meaning is field-specific (medical, legal, etc.)
+### B. WORD-LEVEL FEATURES (appear once per entry)
+1. **Inflections**
+   - Plural form(s)
+   - Possessive form
+   - Irregular forms if any
 
-## Elements for ENTIRE WORD (not per meaning)
+2. **Word Family**
+   - Related forms (verb→noun→adjective)
+   - Maximum 3-4 related words
 
-### 1. Inflection Forms
-- Provide all inflected forms (plural, possessive, etc.)
-- Show irregular forms clearly
-- Place at word level, not repeated per meaning
+3. **Pronunciation** (optional)
+   - IPA notation
+   - Stress markers
 
-### 2. Related Forms
-- Show connected words briefly (decide→decision→decisive)
-- Help users expand vocabulary naturally
-- Include word family connections
+## 2. DELIVERY CHARACTERISTICS
 
-### 3. Visual and Sensory Anchoring
-- **Concrete nouns**: Evoke what users can see/touch/experience
-- **Abstract nouns**: Connect to familiar feelings or concepts
-- Create instant mental associations across all meanings
+### Definition Writing Rules
+- **Clarity First**: Use familiar words to explain unfamiliar ones
+- **Emotional Accuracy**: Capture the word's "feel" not just literal meaning
+- **Instant Understanding**: User should grasp meaning within 3 seconds
+- **Natural Language**: Write as if explaining to a friend, not a dictionary
 
-## Output Requirements
-- JSON format suitable for database entry
-- Structure to allow each word in definition to be clickable
-- Support for special formatting (grey box, italic) where meaningful
-- Clear separation between per-meaning elements and whole-word elements
+### Semantic Category Guidelines
+- **Functional**: "A [tool/device/method] for [doing X]"
+- **Conceptual**: "A [type/form/system] of [broader concept]"
+- **Experiential**: "A [feeling/sensation/state] of [experience]"
+- **Relational**: "A [person/thing] who/that [relationship]"
 
-## Quality Standards
-- Every word should serve its function, avoid redundancy
-- Clarity without complexity - no circular definitions or jargon
-- Concise completeness - all essential information in minimal space
-- Help users understand both when and how to use the word, logically and intuitively
+### Example Sentence Criteria
+- **Length**: 6-15 words typically
+- **Complexity**: Match the word's typical usage level
+- **Context**: Show word in its most natural habitat
+- **Memorability**: Create mental hooks for retention
+
+### Synonym Selection
+- **Precision**: Each synonym must be genuinely substitutable
+- **Gradation**: Show subtle differences (happy→glad→joyful)
+- **Practicality**: Include only words users would actually use
+
+## 3. JSON OUTPUT FORMAT
+
+```json
+{
+  "word": "string",
+  "pos": "noun",
+  "inflections": {
+    "plural": "string or array",
+    "possessive": "string",
+    "irregular": "object or null"
+  },
+  "word_family": ["array", "of", "related", "words"],
+  "meanings": [
+    {
+      "id": 1,
+      "definition": "string (max 25 words)",
+      "countability": "C|UC|C/UC",
+      "countability_special": boolean,
+      "semantic_category": {
+        "type": "functional|conceptual|experiential|relational",
+        "description": "string"
+      },
+      "synonyms": ["array", "of", "synonyms"],
+      "examples": [
+        "First example sentence.",
+        "Second example sentence if needed."
+      ],
+      "register": "formal|informal|neutral|technical|literary",
+      "field": "string or null"
+    }
+  ],
+  "pronunciation": "IPA string or null"
+}
+```
+
+## 4. SPECIAL FORMATTING RULES
+
+### Clickable Elements
+- Every word in definitions must be individually addressable
+- Structure: `<span class="word-link" data-word="[word]">[word]</span>`
+
+### Visual Indicators
+- `*special*` countability: highlighted background
+- Technical terms: italic formatting
+- Formal register: subtle color coding
+- Field-specific: domain badge
+
+### Definition Prioritization
+1. Most common/frequent meaning first
+2. Concrete before abstract
+3. General before specialized
+4. Positive/neutral before negative connotations
+
+## 5. QUALITY CHECKLIST
+
+### Must Have
+- ✓ Every meaning covered (but merged if <40% different)
+- ✓ All definitions under 25 words
+- ✓ Only top 10,000 vocabulary used
+- ✓ Natural example sentences
+- ✓ Accurate countability markers
+
+### Must Avoid
+- ✗ Dictionary-speak ("of or relating to...")
+- ✗ Circular definitions using the word itself
+- ✗ Cultural references that date quickly
+- ✗ Technical jargon in general definitions
+- ✗ Redundant or overlapping meanings
+
+### Success Metrics
+- User understands meaning in <3 seconds
+- Can use word correctly after reading entry
+- Remembers meaning after one exposure
+- Feels confident about register/context
