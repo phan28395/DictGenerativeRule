@@ -1,0 +1,171 @@
+{
+  "entries": [
+    {
+      "word": "bridge",
+      "pos": "noun",
+      "pos_frequency": {"noun": 92, "verb": 8},
+      "inflections": {
+        "plural": "bridges",
+        "possessive": "bridge's"
+      },
+      "definitions": [
+        {
+          "meaning_id": 1,
+          "definition": "structure built over water or gap for crossing",
+          "definition_full": "a structure carrying a road or path across a river, ravine, or other obstacle",
+          "countability": "C",
+          "semantic_category": "construction",
+          "synonyms": ["overpass", "span", "viaduct", "crossing"],
+          "examples": [
+            "The Golden Gate Bridge is famous",
+            "We crossed the wooden bridge carefully",
+            "A stone bridge spans the river"
+          ],
+          "concrete": true,
+          "icon": "🌉",
+          "collocations": ["suspension bridge", "bridge collapse", "cross the bridge", "under the bridge", "bridge construction"],
+          "domain": ["architecture", "engineering"],
+          "phrases": ["burn bridges", "bridge the gap", "water under the bridge"]
+        },
+        {
+          "meaning_id": 2,
+          "definition": "connection or transition between two things",
+          "definition_full": "something that connects or links two separate things, ideas, or groups",
+          "countability": "C",
+          "semantic_category": "abstract connection",
+          "synonyms": ["link", "connection", "tie", "bond"],
+          "examples": [
+            "Music is a bridge between cultures",
+            "She acts as a bridge between departments",
+            "The course bridges theory and practice"
+          ],
+          "concrete": false,
+          "collocations": ["cultural bridge", "bridge between", "build bridges", "communication bridge"],
+          "domain": ["general", "social"]
+        }
+      ]
+    },
+    {
+      "word": "memory",
+      "pos": "noun", 
+      "pos_frequency": {"noun": 100},
+      "inflections": {
+        "plural": "memories",
+        "possessive": "memory's"
+      },
+      "definitions": [
+        {
+          "meaning_id": 1,
+          "definition": "ability to remember information, experiences, or people",
+          "definition_full": "the faculty by which the mind stores and remembers information from past experiences",
+          "countability": "UC",
+          "semantic_category": "mental faculty",
+          "synonyms": ["recall", "recollection", "remembrance", "retention"],
+          "examples": [
+            "She has an excellent memory for names",
+            "My memory isn't what it used to be",
+            "The accident affected his memory"
+          ],
+          "concrete": false,
+          "collocations": ["good memory", "poor memory", "memory loss", "photographic memory", "short-term memory"],
+          "domain": ["psychology", "cognitive science"],
+          "phrases": ["jog someone's memory", "memory lane", "in living memory"]
+        },
+        {
+          "meaning_id": 2,
+          "definition": "something remembered from the past",
+          "definition_full": "a specific recollection or mental impression of a past experience or event",
+          "countability": "C",
+          "semantic_category": "recollection",
+          "synonyms": ["recollection", "remembrance", "reminiscence", "recall"],
+          "examples": [
+            "Childhood memories flooded back",
+            "That's my earliest memory",
+            "We shared happy memories together"
+          ],
+          "concrete": false,
+          "collocations": ["fond memory", "painful memory", "distant memory", "cherished memory", "vivid memory"],
+          "domain": ["general", "personal"]
+        },
+        {
+          "meaning_id": 3,
+          "definition": "computer storage for data and programs",
+          "definition_full": "the part of a computer where data and programs are stored for immediate use",
+          "countability": "UC",
+          "semantic_category": "computing",
+          "synonyms": ["RAM", "storage", "cache"],
+          "examples": [
+            "This program needs more memory",
+            "Check your computer's memory usage",
+            "Memory cards store photos"
+          ],
+          "concrete": true,
+          "icon": "💾",
+          "collocations": ["memory chip", "memory card", "memory upgrade", "available memory", "memory allocation"],
+          "domain": ["technology", "computing"]
+        }
+      ]
+    },
+    {
+      "word": "challenge",
+      "pos": "noun",
+      "pos_frequency": {"noun": 75, "verb": 25},
+      "inflections": {
+        "plural": "challenges",
+        "possessive": "challenge's"
+      },
+      "definitions": [
+        {
+          "meaning_id": 1,
+          "definition": "difficult task requiring effort and determination",
+          "definition_full": "a demanding or stimulating task or situation that tests someone's abilities",
+          "countability": "C",
+          "semantic_category": "difficult task",
+          "synonyms": ["test", "trial", "difficulty", "obstacle"],
+          "examples": [
+            "Learning Chinese is a real challenge",
+            "She enjoys facing new challenges",
+            "The project presents many challenges"
+          ],
+          "concrete": false,
+          "collocations": ["face a challenge", "major challenge", "overcome challenges", "present a challenge", "rise to the challenge"],
+          "domain": ["general", "professional"],
+          "phrases": ["rise to the challenge", "challenge accepted"]
+        },
+        {
+          "meaning_id": 2,
+          "definition": "call to prove or justify something",
+          "definition_full": "a call to someone to participate in a competitive situation or fight to decide who is superior",
+          "countability": "C",
+          "semantic_category": "confrontation",
+          "synonyms": ["dare", "provocation", "summons", "defiance"],
+          "examples": [
+            "He issued a challenge to debate",
+            "The team accepted their challenge",
+            "A direct challenge to authority"
+          ],
+          "concrete": false,
+          "collocations": ["issue a challenge", "accept a challenge", "direct challenge", "legal challenge", "challenge to authority"],
+          "domain": ["competition", "legal"]
+        },
+        {
+          "meaning_id": 3,
+          "definition": "questioning of truth or validity",
+          "definition_full": "an objection or query as to the truth, validity, or legality of something",
+          "countability": "C",
+          "semantic_category": "objection",
+          "synonyms": ["objection", "dispute", "protest", "query"],
+          "examples": [
+            "A legal challenge to the decision",
+            "They mounted a challenge in court",
+            "Challenge the ruling"
+          ],
+          "concrete": false,
+          "collocations": ["legal challenge", "mount a challenge", "court challenge", "constitutional challenge"],
+          "domain": ["legal", "formal"],
+          "special": true
+        }
+      ]
+    }
+  ]
+}
