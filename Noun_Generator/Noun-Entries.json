@@ -1,0 +1,1442 @@
+[
+  {
+    "word": "it",
+    "pos": "noun",
+    "inflections": {
+      "plural": "its",
+      "possessive": "it's"
+    },
+    "pos_frequency": 0.002,
+    "meanings": []
+  },
+  {
+    "word": "are",
+    "pos": "noun",
+    "inflections": {
+      "plural": "ares",
+      "possessive": "are's"
+    },
+    "pos_frequency": 0.001,
+    "meanings": []
+  },
+  {
+    "word": "may",
+    "pos": "noun",
+    "inflections": {
+      "plural": "Mays",
+      "possessive": "May's"
+    },
+    "pos_frequency": 0.15,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "the fifth month of the year, between April and June",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "UC",
+          "special": false
+        },
+        "semantic_category": "time period",
+        "emoji": "\ud83d\udcc5",
+        "collocations": {
+          "adjective_noun": [
+            "early May",
+            "late May",
+            "last May"
+          ],
+          "noun_verb": [
+            "May arrives",
+            "May brings",
+            "May ends"
+          ]
+        },
+        "synonyms": [
+          "springtime",
+          "spring month"
+        ],
+        "examples": [
+          "The wedding is scheduled for May.",
+          "May brings warmer weather and flowers.",
+          "We always vacation in early May."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "school",
+    "pos": "noun",
+    "inflections": {
+      "plural": "schools",
+      "possessive": "school's"
+    },
+    "pos_frequency": 0.95,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a place where children and young people receive education",
+        "domain": [
+          "education",
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "educational institution",
+        "emoji": "\ud83c\udfeb",
+        "collocations": {
+          "adjective_noun": [
+            "elementary school",
+            "high school",
+            "public school",
+            "private school"
+          ],
+          "noun_verb": [
+            "school starts",
+            "school ends",
+            "school teaches",
+            "school provides"
+          ]
+        },
+        "synonyms": [
+          "institution",
+          "academy",
+          "educational facility"
+        ],
+        "examples": [
+          "She walks to school every morning.",
+          "The school has over 500 students.",
+          "Our school offers many after-class activities."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "the time during which teaching happens at a school",
+        "domain": [
+          "education"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "UC",
+          "special": false
+        },
+        "semantic_category": "time period",
+        "emoji": "\u23f0",
+        "collocations": {
+          "adjective_noun": [
+            "after school",
+            "before school",
+            "during school"
+          ],
+          "noun_verb": [
+            "school begins",
+            "school finishes",
+            "school resumes"
+          ]
+        },
+        "synonyms": [
+          "class time",
+          "school hours"
+        ],
+        "examples": [
+          "School starts at eight o'clock sharp.",
+          "No phones allowed during school.",
+          "She has piano lessons after school."
+        ]
+      },
+      {
+        "id": 3,
+        "definition": "a group of people who share similar ideas or methods",
+        "domain": [
+          "arts",
+          "philosophy",
+          "academic"
+        ],
+        "register": "formal",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "intellectual group",
+        "emoji": "\ud83c\udfa8",
+        "collocations": {
+          "adjective_noun": [
+            "old school",
+            "new school",
+            "philosophical school"
+          ],
+          "noun_verb": [
+            "school emerges",
+            "school influences",
+            "school develops"
+          ]
+        },
+        "synonyms": [
+          "movement",
+          "tradition",
+          "approach"
+        ],
+        "examples": [
+          "The impressionist school changed art forever.",
+          "He belongs to the old school of thought.",
+          "Different schools of economics offer various theories."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "years",
+    "pos": "noun",
+    "inflections": {
+      "plural": "years",
+      "possessive": "years'"
+    },
+    "pos_frequency": 0.98,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "plural of year; multiple periods of twelve months",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "time period",
+        "emoji": "\ud83d\udcc6",
+        "collocations": {
+          "adjective_noun": [
+            "many years",
+            "several years",
+            "recent years",
+            "early years"
+          ],
+          "noun_verb": [
+            "years pass",
+            "years go by",
+            "years fly",
+            "years bring"
+          ]
+        },
+        "synonyms": [
+          "ages",
+          "decades",
+          "time"
+        ],
+        "examples": [
+          "She lived there for twenty years.",
+          "Years of practice made him expert.",
+          "In recent years, technology has advanced rapidly."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "season",
+    "pos": "noun",
+    "inflections": {
+      "plural": "seasons",
+      "possessive": "season's"
+    },
+    "pos_frequency": 0.92,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "one of the four periods of the year: spring, summer, fall, winter",
+        "domain": [
+          "general",
+          "geography"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "time period",
+        "emoji": "\ud83c\udf42",
+        "collocations": {
+          "adjective_noun": [
+            "rainy season",
+            "dry season",
+            "holiday season",
+            "busy season"
+          ],
+          "noun_verb": [
+            "season changes",
+            "season begins",
+            "season ends",
+            "season brings"
+          ]
+        },
+        "synonyms": [
+          "time of year",
+          "period",
+          "quarter"
+        ],
+        "examples": [
+          "Fall is my favorite season.",
+          "The rainy season starts in June.",
+          "Each season brings different weather patterns."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "a period when a particular sport or activity happens",
+        "domain": [
+          "sports",
+          "arts"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "activity period",
+        "emoji": "\u26bd",
+        "collocations": {
+          "adjective_noun": [
+            "football season",
+            "baseball season",
+            "hunting season",
+            "theater season"
+          ],
+          "noun_verb": [
+            "season starts",
+            "season opens",
+            "season closes",
+            "season continues"
+          ]
+        },
+        "synonyms": [
+          "period",
+          "time",
+          "schedule"
+        ],
+        "examples": [
+          "Basketball season runs from October to April.",
+          "The theater season features ten new plays.",
+          "Hunting season opens next Monday."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "world",
+    "pos": "noun",
+    "inflections": {
+      "plural": "worlds",
+      "possessive": "world's"
+    },
+    "pos_frequency": 0.96,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "the earth and all the people and things on it",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": true
+        },
+        "semantic_category": "planet",
+        "emoji": "\ud83c\udf0d",
+        "collocations": {
+          "adjective_noun": [
+            "whole world",
+            "entire world",
+            "modern world",
+            "real world"
+          ],
+          "noun_verb": [
+            "world changes",
+            "world needs",
+            "world watches",
+            "world waits"
+          ]
+        },
+        "synonyms": [
+          "earth",
+          "globe",
+          "planet"
+        ],
+        "examples": [
+          "She wants to travel the world.",
+          "The whole world watched the event.",
+          "Climate change affects the entire world."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "a particular area of activity or group of people",
+        "domain": [
+          "general",
+          "social"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "domain",
+        "emoji": "\ud83c\udfad",
+        "collocations": {
+          "adjective_noun": [
+            "business world",
+            "fashion world",
+            "academic world",
+            "digital world"
+          ],
+          "noun_verb": [
+            "world revolves",
+            "world operates",
+            "world functions",
+            "world exists"
+          ]
+        },
+        "synonyms": [
+          "realm",
+          "sphere",
+          "domain"
+        ],
+        "examples": [
+          "He's famous in the art world.",
+          "The business world is highly competitive.",
+          "She entered the world of politics."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "state",
+    "pos": "noun",
+    "inflections": {
+      "plural": "states",
+      "possessive": "state's"
+    },
+    "pos_frequency": 0.85,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a political unit that is part of a country",
+        "domain": [
+          "politics",
+          "geography"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "political unit",
+        "emoji": "\ud83c\udfdb\ufe0f",
+        "collocations": {
+          "adjective_noun": [
+            "home state",
+            "neighboring state",
+            "southern state",
+            "member state"
+          ],
+          "noun_verb": [
+            "state governs",
+            "state passes",
+            "state provides",
+            "state regulates"
+          ]
+        },
+        "synonyms": [
+          "province",
+          "territory",
+          "region"
+        ],
+        "examples": [
+          "California is the most populous state.",
+          "Each state has its own laws.",
+          "She moved to a different state."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "the condition that something or someone is in",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "condition",
+        "emoji": "\ud83d\udcca",
+        "collocations": {
+          "adjective_noun": [
+            "current state",
+            "mental state",
+            "physical state",
+            "solid state"
+          ],
+          "noun_verb": [
+            "state changes",
+            "state deteriorates",
+            "state improves",
+            "state remains"
+          ]
+        },
+        "synonyms": [
+          "condition",
+          "status",
+          "situation"
+        ],
+        "examples": [
+          "The house is in poor state.",
+          "His mental state worried the doctors.",
+          "Water changes state when it freezes."
+        ]
+      },
+      {
+        "id": 3,
+        "definition": "a country considered as a political organization",
+        "domain": [
+          "politics",
+          "legal"
+        ],
+        "register": "formal",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "nation",
+        "emoji": "\ud83c\udff4",
+        "collocations": {
+          "adjective_noun": [
+            "sovereign state",
+            "nation state",
+            "welfare state",
+            "police state"
+          ],
+          "noun_verb": [
+            "state controls",
+            "state intervenes",
+            "state protects",
+            "state functions"
+          ]
+        },
+        "synonyms": [
+          "nation",
+          "country",
+          "government"
+        ],
+        "examples": [
+          "The state provides free healthcare.",
+          "Church and state should remain separate.",
+          "Many states signed the treaty."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "city",
+    "pos": "noun",
+    "inflections": {
+      "plural": "cities",
+      "possessive": "city's"
+    },
+    "pos_frequency": 0.98,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a large town where many people live and work",
+        "domain": [
+          "general",
+          "geography"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "urban area",
+        "emoji": "\ud83c\udfd9\ufe0f",
+        "collocations": {
+          "adjective_noun": [
+            "big city",
+            "capital city",
+            "major city",
+            "coastal city"
+          ],
+          "noun_verb": [
+            "city grows",
+            "city develops",
+            "city attracts",
+            "city offers"
+          ]
+        },
+        "synonyms": [
+          "metropolis",
+          "urban area",
+          "municipality"
+        ],
+        "examples": [
+          "New York is a bustling city.",
+          "The city has excellent public transport.",
+          "Many people move to cities for work."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "university",
+    "pos": "noun",
+    "inflections": {
+      "plural": "universities",
+      "possessive": "university's"
+    },
+    "pos_frequency": 0.99,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "an institution where students study for degrees and academic research happens",
+        "domain": [
+          "education",
+          "academic"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "educational institution",
+        "emoji": "\ud83c\udf93",
+        "collocations": {
+          "adjective_noun": [
+            "public university",
+            "private university",
+            "top university",
+            "local university"
+          ],
+          "noun_verb": [
+            "university offers",
+            "university accepts",
+            "university provides",
+            "university ranks"
+          ]
+        },
+        "synonyms": [
+          "college",
+          "institution",
+          "academia"
+        ],
+        "examples": [
+          "She studied medicine at university.",
+          "The university has 30,000 students.",
+          "Many universities offer online courses now."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "while",
+    "pos": "noun",
+    "inflections": {
+      "plural": "whiles",
+      "possessive": "while's"
+    },
+    "pos_frequency": 0.02,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a period of time, especially a short one",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "time period",
+        "emoji": "\u23f3",
+        "collocations": {
+          "adjective_noun": [
+            "short while",
+            "long while",
+            "little while",
+            "good while"
+          ],
+          "noun_verb": [
+            "while passes",
+            "while elapses",
+            "while goes by",
+            "while lasts"
+          ]
+        },
+        "synonyms": [
+          "time",
+          "period",
+          "moment"
+        ],
+        "examples": [
+          "Stay here for a while.",
+          "It took quite a while to finish.",
+          "After a while, they became friends."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "team",
+    "pos": "noun",
+    "inflections": {
+      "plural": "teams",
+      "possessive": "team's"
+    },
+    "pos_frequency": 0.99,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a group of people who work or play together",
+        "domain": [
+          "sports",
+          "business",
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "group",
+        "emoji": "\ud83d\udc65",
+        "collocations": {
+          "adjective_noun": [
+            "winning team",
+            "home team",
+            "national team",
+            "project team"
+          ],
+          "noun_verb": [
+            "team wins",
+            "team plays",
+            "team works",
+            "team collaborates"
+          ]
+        },
+        "synonyms": [
+          "group",
+          "squad",
+          "crew"
+        ],
+        "examples": [
+          "Our team won the championship.",
+          "The project team meets every Monday.",
+          "She's a valuable team member."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "film",
+    "pos": "noun",
+    "inflections": {
+      "plural": "films",
+      "possessive": "film's"
+    },
+    "pos_frequency": 0.95,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a story shown in moving pictures at a cinema or on television",
+        "domain": [
+          "arts",
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "entertainment",
+        "emoji": "\ud83c\udfac",
+        "collocations": {
+          "adjective_noun": [
+            "new film",
+            "foreign film",
+            "classic film",
+            "horror film"
+          ],
+          "noun_verb": [
+            "film shows",
+            "film stars",
+            "film wins",
+            "film premieres"
+          ]
+        },
+        "synonyms": [
+          "movie",
+          "picture",
+          "motion picture"
+        ],
+        "examples": [
+          "The film won three Academy Awards.",
+          "We watched a horror film last night.",
+          "She stars in the new film."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "a thin layer of plastic used in cameras to capture images",
+        "domain": [
+          "technology",
+          "arts"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C/UC",
+          "special": false
+        },
+        "semantic_category": "material",
+        "emoji": "\ud83d\udcf7",
+        "collocations": {
+          "adjective_noun": [
+            "photographic film",
+            "color film",
+            "35mm film",
+            "plastic film"
+          ],
+          "noun_verb": [
+            "film captures",
+            "film develops",
+            "film expires",
+            "film rolls"
+          ]
+        },
+        "synonyms": [
+          "negative",
+          "roll",
+          "celluloid"
+        ],
+        "examples": [
+          "Digital cameras replaced traditional film.",
+          "The photographer prefers black-and-white film.",
+          "Load the film carefully into camera."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "year",
+    "pos": "noun",
+    "inflections": {
+      "plural": "years",
+      "possessive": "year's"
+    },
+    "pos_frequency": 0.99,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a period of twelve months, especially from January to December",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "time period",
+        "emoji": "\ud83d\udcc5",
+        "collocations": {
+          "adjective_noun": [
+            "last year",
+            "next year",
+            "fiscal year",
+            "academic year"
+          ],
+          "noun_verb": [
+            "year begins",
+            "year ends",
+            "year passes",
+            "year brings"
+          ]
+        },
+        "synonyms": [
+          "annum",
+          "twelve months",
+          "calendar year"
+        ],
+        "examples": [
+          "The company had a profitable year.",
+          "She graduates next year.",
+          "Each year brings new challenges."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "part",
+    "pos": "noun",
+    "inflections": {
+      "plural": "parts",
+      "possessive": "part's"
+    },
+    "pos_frequency": 0.75,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a piece or section of something larger",
+        "domain": [
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "component",
+        "emoji": "\ud83e\udde9",
+        "collocations": {
+          "adjective_noun": [
+            "important part",
+            "small part",
+            "integral part",
+            "major part"
+          ],
+          "noun_verb": [
+            "part breaks",
+            "part fits",
+            "part works",
+            "part belongs"
+          ]
+        },
+        "synonyms": [
+          "piece",
+          "portion",
+          "section",
+          "component"
+        ],
+        "examples": [
+          "This part of the machine needs repair.",
+          "The best part comes at the end.",
+          "Each part plays an important role."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "a role played by an actor in a play or film",
+        "domain": [
+          "arts",
+          "theater"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "performance role",
+        "emoji": "\ud83c\udfad",
+        "collocations": {
+          "adjective_noun": [
+            "leading part",
+            "minor part",
+            "supporting part",
+            "main part"
+          ],
+          "noun_verb": [
+            "part requires",
+            "part suits",
+            "part challenges",
+            "part develops"
+          ]
+        },
+        "synonyms": [
+          "role",
+          "character",
+          "performance"
+        ],
+        "examples": [
+          "She auditioned for the leading part.",
+          "He played a small part perfectly.",
+          "The part requires excellent acting skills."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "can",
+    "pos": "noun",
+    "inflections": {
+      "plural": "cans",
+      "possessive": "can's"
+    },
+    "pos_frequency": 0.015,
+    "meanings": []
+  },
+  {
+    "word": "second",
+    "pos": "noun",
+    "inflections": {
+      "plural": "seconds",
+      "possessive": "second's"
+    },
+    "pos_frequency": 0.25,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a unit of time equal to one sixtieth of a minute",
+        "domain": [
+          "general",
+          "science"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "time unit",
+        "emoji": "\u23f1\ufe0f",
+        "collocations": {
+          "adjective_noun": [
+            "split second",
+            "few seconds",
+            "thirty seconds",
+            "last second"
+          ],
+          "noun_verb": [
+            "seconds pass",
+            "seconds tick",
+            "seconds count",
+            "seconds remain"
+          ]
+        },
+        "synonyms": [
+          "moment",
+          "instant",
+          "sec"
+        ],
+        "examples": [
+          "Wait just a second, please.",
+          "The race was won by seconds.",
+          "Every second counts in this game."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "the position after first in order, rank, or importance",
+        "domain": [
+          "general",
+          "sports"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "position",
+        "emoji": "\ud83e\udd48",
+        "collocations": {
+          "adjective_noun": [
+            "close second",
+            "distant second",
+            "solid second",
+            "clear second"
+          ],
+          "noun_verb": [
+            "second place",
+            "second finishes",
+            "second ranks",
+            "second comes"
+          ]
+        },
+        "synonyms": [
+          "runner-up",
+          "number two",
+          "next"
+        ],
+        "examples": [
+          "She finished a close second.",
+          "He came in second place.",
+          "The team ranks second nationally."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "being",
+    "pos": "noun",
+    "inflections": {
+      "plural": "beings",
+      "possessive": "being's"
+    },
+    "pos_frequency": 0.1,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a person or living creature",
+        "domain": [
+          "general",
+          "philosophy"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "creature",
+        "emoji": "\ud83d\udc64",
+        "collocations": {
+          "adjective_noun": [
+            "human being",
+            "living being",
+            "intelligent being",
+            "sentient being"
+          ],
+          "noun_verb": [
+            "being exists",
+            "being thinks",
+            "being feels",
+            "being lives"
+          ]
+        },
+        "synonyms": [
+          "creature",
+          "person",
+          "individual",
+          "entity"
+        ],
+        "examples": [
+          "All human beings deserve respect.",
+          "Aliens might be intelligent beings.",
+          "Every living being needs water."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "the state or fact of existing",
+        "domain": [
+          "philosophy",
+          "academic"
+        ],
+        "register": "formal",
+        "countability": {
+          "type": "UC",
+          "special": false
+        },
+        "semantic_category": "existence",
+        "emoji": "\ud83d\udcad",
+        "collocations": {
+          "adjective_noun": [
+            "whole being",
+            "inner being",
+            "very being",
+            "entire being"
+          ],
+          "noun_verb": [
+            "being continues",
+            "being ceases",
+            "being manifests",
+            "being persists"
+          ]
+        },
+        "synonyms": [
+          "existence",
+          "essence",
+          "nature"
+        ],
+        "examples": [
+          "The very being of democracy depends on participation.",
+          "She felt it in her whole being.",
+          "Questions about being fascinate philosophers."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "american",
+    "pos": "noun",
+    "inflections": {
+      "plural": "Americans",
+      "possessive": "American's"
+    },
+    "pos_frequency": 0.3,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "a person from the United States of America",
+        "domain": [
+          "general",
+          "geography"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "nationality",
+        "emoji": "\ud83c\uddfa\ud83c\uddf8",
+        "collocations": {
+          "adjective_noun": [
+            "proud American",
+            "average American",
+            "typical American",
+            "fellow American"
+          ],
+          "noun_verb": [
+            "Americans vote",
+            "Americans believe",
+            "Americans travel",
+            "Americans celebrate"
+          ]
+        },
+        "synonyms": [
+          "US citizen",
+          "Yankee",
+          "US national"
+        ],
+        "examples": [
+          "Many Americans celebrate Thanksgiving.",
+          "She married an American.",
+          "Americans value individual freedom."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "south",
+    "pos": "noun",
+    "inflections": {
+      "plural": "souths",
+      "possessive": "south's"
+    },
+    "pos_frequency": 0.45,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "the direction opposite to north, or the part of an area in this direction",
+        "domain": [
+          "geography",
+          "general"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "UC",
+          "special": true
+        },
+        "semantic_category": "direction",
+        "emoji": "\ud83e\udded",
+        "collocations": {
+          "adjective_noun": [
+            "deep south",
+            "far south",
+            "global south",
+            "true south"
+          ],
+          "noun_verb": [
+            "south faces",
+            "south lies",
+            "south extends",
+            "south borders"
+          ]
+        },
+        "synonyms": [
+          "southern region",
+          "southward",
+          "meridional"
+        ],
+        "examples": [
+          "The birds fly south for winter.",
+          "Texas is in the south.",
+          "Head south on the highway."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "war",
+    "pos": "noun",
+    "inflections": {
+      "plural": "wars",
+      "possessive": "war's"
+    },
+    "pos_frequency": 0.98,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "armed fighting between countries or groups",
+        "domain": [
+          "military",
+          "politics",
+          "history"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C/UC",
+          "special": false
+        },
+        "semantic_category": "conflict",
+        "emoji": "\u2694\ufe0f",
+        "collocations": {
+          "adjective_noun": [
+            "civil war",
+            "world war",
+            "cold war",
+            "nuclear war"
+          ],
+          "noun_verb": [
+            "war breaks out",
+            "war ends",
+            "war rages",
+            "war devastates"
+          ]
+        },
+        "synonyms": [
+          "conflict",
+          "warfare",
+          "combat",
+          "hostilities"
+        ],
+        "examples": [
+          "The war lasted for six years.",
+          "Countries should avoid war through diplomacy.",
+          "War brings suffering to civilians."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "a situation of competing or fighting against something harmful",
+        "domain": [
+          "general",
+          "politics"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "campaign",
+        "emoji": "\ud83d\udee1\ufe0f",
+        "collocations": {
+          "adjective_noun": [
+            "price war",
+            "trade war",
+            "culture war",
+            "turf war"
+          ],
+          "noun_verb": [
+            "war continues",
+            "war intensifies",
+            "war wages",
+            "war escalates"
+          ]
+        },
+        "synonyms": [
+          "battle",
+          "campaign",
+          "struggle",
+          "fight"
+        ],
+        "examples": [
+          "The war on poverty continues.",
+          "They declared war against corruption.",
+          "The price war benefits consumers."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "history",
+    "pos": "noun",
+    "inflections": {
+      "plural": "histories",
+      "possessive": "history's"
+    },
+    "pos_frequency": 0.95,
+    "meanings": [
+      {
+        "id": 1,
+        "definition": "the study of past events, particularly in human affairs",
+        "domain": [
+          "academic",
+          "education"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "UC",
+          "special": false
+        },
+        "semantic_category": "academic subject",
+        "emoji": "\ud83d\udcda",
+        "collocations": {
+          "adjective_noun": [
+            "ancient history",
+            "modern history",
+            "world history",
+            "local history"
+          ],
+          "noun_verb": [
+            "history shows",
+            "history teaches",
+            "history repeats",
+            "history reveals"
+          ]
+        },
+        "synonyms": [
+          "past",
+          "chronicle",
+          "record"
+        ],
+        "examples": [
+          "She majored in European history.",
+          "History teaches us valuable lessons.",
+          "The museum displays local history."
+        ]
+      },
+      {
+        "id": 2,
+        "definition": "a continuous record of past events or trends",
+        "domain": [
+          "general",
+          "medicine"
+        ],
+        "register": "neutral",
+        "countability": {
+          "type": "C",
+          "special": false
+        },
+        "semantic_category": "record",
+        "emoji": "\ud83d\udccb",
+        "collocations": {
+          "adjective_noun": [
+            "medical history",
+            "family history",
+            "credit history",
+            "work history"
+          ],
+          "noun_verb": [
+            "history indicates",
+            "history suggests",
+            "history includes",
+            "history shows"
+          ]
+        },
+        "synonyms": [
+          "record",
+          "background",
+          "past",
+          "track record"
+        ],
+        "examples": [
+          "The patient has a history of heart disease.",
+          "Check your browser history for the website.",
+          "Her work history is impressive."
+        ]
+      }
+    ]
+  }
+]
