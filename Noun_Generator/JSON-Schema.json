@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DictionaryEntry",
+  "type": "object",
+  "required": ["word", "pos", "inflections", "pos_frequency", "meanings"],
+  "properties": {
+    "word": {
+      "type": "string",
+      "description": "The word being defined",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "pos": {
+      "type": "string",
+      "const": "noun",
+      "description": "Part of speech"
+    },
+    "inflections": {
+      "type": "object",
+      "required": ["plural", "possessive"],
+      "properties": {
+        "plural": {
+          "type": "string",
+          "description": "Plural form of the noun"
+        },
+        "possessive": {
+          "type": "string",
+          "description": "Possessive singular form"
+        },
+        "possessive_plural": {
+          "type": "string",
+          "description": "Possessive plural form (optional)"
+        },
+        "irregular": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Any irregular forms"
+        }
+      }
+    },
+    "pos_frequency": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Frequency of use as noun vs other parts of speech"
+    },
+    "meanings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id", 
+          "definition", 
+          "domain", 
+          "register", 
+          "countability", 
+          "semantic_category", 
+          "emoji", 
+          "collocations", 
+          "synonyms", 
+          "examples"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Meaning order (1 = most common)"
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 150,
+            "description": "Definition using only top 10,000 words, max 25 words"
+          },
+          "domain": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 5,
+            "items": {
+              "type": "string",
+              "enum": [
+                "general", "academic", "business", "technology", "science",
+                "medicine", "legal", "politics", "philosophy", "psychology",
+                "education", "sports", "arts", "music", "literature",
+                "religion", "social", "economics", "engineering", "mathematics",
+                "biology", "chemistry", "physics", "geography", "history",
+                "food", "fashion", "military", "maritime", "aviation"
+              ]
+            },
+            "description": "Domains where this meaning is typically used"
+          },
+          "register": {
+            "type": "string",
+            "enum": ["formal", "informal", "neutral", "technical", "literary", "slang"],
+            "description": "Language register for this meaning"
+          },
+          "countability": {
+            "type": "object",
+            "required": ["type", "special"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["C", "UC", "C/UC"],
+                "description": "Countable, Uncountable, or Both"
+              },
+              "special": {
+                "type": "boolean",
+                "description": "True when countability significantly changes meaning"
+              }
+            }
+          },
+          "semantic_category": {
+            "type": "string",
+            "maxLength": 30,
+            "description": "Mental map location (max 2 words)"
+          },
+          "emoji": {
+            "type": "string",
+            "pattern": "^\\p{Emoji}$",
+            "description": "Single emoji as visual hint"
+          },
+          "collocations": {
+            "type": "object",
+            "required": ["adjective_noun", "noun_verb"],
+            "properties": {
+              "adjective_noun": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 5,
+                "items": {
+                  "type": "string"
+                },
+                "description": "Common adjective + noun patterns"
+              },
+              "noun_verb": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 5,
+                "items": {
+                  "type": "string"
+                },
+                "description": "Common noun + verb patterns"
+              }
+            }
+          },
+          "synonyms": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 5,
+            "items": {
+              "type": "string"
+            },
+            "description": "Contextually appropriate synonyms, ordered by frequency"
+          },
+          "examples": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "string",
+              "minLength": 15,
+              "maxLength": 80
+            },
+            "description": "Example sentences (6-10 words each)"
+          }
+        }
+      }
+    }
+  }
+}
